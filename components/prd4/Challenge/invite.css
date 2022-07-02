@@ -1,0 +1,180 @@
+.App {
+    font-family: sans-serif;
+    text-align: left;
+  }
+  .tablist {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #5f5f5f;
+    padding-left: 0%;
+  }
+  .tab1:active {
+    font-weight: 600;
+    border-bottom-style: solid;
+    border-bottom-color: #0b6e4f;
+  }
+  
+  .container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .heading {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 70px;
+    padding-top: 0% !important;
+  }
+  
+  .heading1 {
+    color: #0b6e4f;
+  }
+  
+  .description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+  
+    color: #5f5f5f;
+  }
+  
+  .img2 {
+    padding-left: 3%;
+    padding-top: 3%;
+    width: 60% !important;
+    height: 50% !important;
+  }
+  #small2 {
+    width: 100%;
+    height: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    
+  }
+  .card2-title {
+    font-weight: bold;
+  }
+  .card2 {
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+    padding: 3%;
+  }
+  .card2 img {
+    width: 40%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: calc(0.25rem - 1px);
+  }
+  @media only screen and (max-width: 768px) {
+    a {
+      display: none;
+    }
+    .card2-body .card2-text {
+      margin: 0;
+    }
+    .card2 img {
+      width: 50%;
+    }
+  
+    .img2 {
+      padding-left: 3%;
+      padding-top: 3%;
+      padding-right: 3%;
+      width: 100% !important;
+      height: 80% !important;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .card img {
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (min-width: 830px) {
+    #small2{
+        padding-top: 10%;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .card2 {
+      flex-direction: row;
+      align-items: center;
+    }
+    .App {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  
+    .img {
+      width: 100%;
+      height: 300px !important;
+      border: 1px solid #000000;
+      border-radius: 12px;
+    }
+  
+    .btn1 {
+      padding-left: 100%;
+    }
+  
+    .table1 {
+      width: 200%;
+    }
+    .img2 {
+      width: 90% !important;
+    }
+  
+    .col2 {
+      padding-left: 5%;
+    }
+  }
+  
+  .title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 40px;
+    color: #0b6e4f;
+  }
+  
+  
+  .btn1 {
+    padding-left: 55%;
+  }
+  .btn {
+    background: #13ae7e;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+  }
+  
+  .img {
+    padding-left: 50% !important;
+    width: 130%;
+    height: 280px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+  }
+
+  .btn{
+   margin-left: 7%;
+   padding-left: 3%;
+   padding-right: 3%;
+  }
+  .input{
+    background-color: lightgrey;
+    border-radius: 10px;
+    color: grey;
+    border-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #share{
+    padding-top: 3%;
+    padding-bottom: 1%;
+  }

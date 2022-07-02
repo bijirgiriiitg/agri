@@ -1,0 +1,93 @@
+.container{
+
+    padding: 2%;
+    margin-bottom: 2%;
+
+}
+.qsnumber{
+    display: flex;
+    gap: 10px;
+}
+.num{
+    transform: translateY(-20%);
+    color: #0B6E4F;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+
+
+}
+.text{
+    width: 60%;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #5F5F5F;
+    font-size: 110%;
+}
+.options{
+    transform: translate(1%,-10%);
+    font-family: 'Roboto';
+    font-style: normal;
+}
+.option{
+    font-family: 'Roboto';
+   font-style: normal;
+    display: flex;
+    gap: 0.9px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.answer{
+    flex-basis: 20%;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #FFFFFF;
+    background: #13AE7E; 
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+.discussion{
+    flex-basis: 20%;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #FFFFFF;
+    border: none;
+    background: #5F5F5F;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+.save{
+    flex-basis: 20%;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #FFFFFF;
+    background: #3362AB;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: 600;
+}
