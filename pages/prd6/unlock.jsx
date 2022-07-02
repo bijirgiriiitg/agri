@@ -4,6 +4,7 @@ import { Tabs, Tab, TabPanel } from "../../components/prd6/tabs/tabss";
 import { Button } from "react-bootstrap";
 import { MdBookmarkBorder} from "react-icons/md";
 import styles from "./styles.module.css";
+import { useNavigate } from "react-router-dom";
 import Chevron from "react-chevron";
 import Pay from "./payment";
 const TabsContainer = styled.div`
@@ -17,11 +18,15 @@ const TabPanelContainer = styled.div`
 `;
 
 const Apkk =()=> {
+  const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState(2);
   const handleChange = (e, value) => {
     setActiveTab(value);
   };
   
+  const handleClick = (e) => {
+    console.log(e);
+  }
 
   return (
     <div className={styles.Appyy}>
@@ -42,11 +47,11 @@ const Apkk =()=> {
         <TabPanel value={activeTab} selectedIndex={2}>
           <h1 className={styles.tab31}>Food Technology : Agriculture machinery</h1>
           <div className={styles.bt01}>
-            <Button className={styles.bt0}><MdBookmarkBorder className={styles.oye100} />Bookmark</Button>
+            <Button onClick={() => navigate('/bookmarks')} className={styles.bt0}><MdBookmarkBorder className={styles.oye100} />Bookmark</Button>
           </div>
           <img className={styles.org1} src="images/unlock.jpg" alt="/"/>
           <div className={styles.bt140}>
-            <Pay/>
+             <Pay/>
           </div>
           <p className={styles.paisa}>for only <span className={styles.shi}>₹ 7000</span></p>
         </TabPanel>
