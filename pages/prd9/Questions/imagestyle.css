@@ -1,0 +1,33 @@
+.custom-image {
+    transform: scale(0.75);
+    height: 10vw;
+    margin: 0;
+}
+.custom-small-image {
+    transform: scale(0.5);
+    margin: 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .custom-image {
+        height: 25vw;
+        margin-top: 2vw;
+    }
+
+    .custom-small-image {
+        height: 20vw;
+        margin-top: 2vw;
+    }
+
+    .icon {
+        height: 4vw;
+    }
+    
+}
