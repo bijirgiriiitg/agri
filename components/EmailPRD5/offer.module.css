@@ -1,0 +1,33 @@
+.container{
+    text-align: center;
+    background: #13AE7E;
+    padding: 0.1%;
+    margin-bottom: 2%;
+    width: 100%;
+    /* transform: translateY(-100%); */
+}
+.text{
+    font-family: 'Roboto';
+font-style: normal;
+color: #FFFFFF;
+font-weight: 700;
+font-size: 200%;
+}
+@media only screen and (max-width:535px){
+    .container{
+        text-align: center;
+        background: #13AE7E;
+        padding: 0;
+        margin-bottom: 2%;
+        
+        /* transform: translateY(-200%); */
+       
+    }
+    .text{
+        font-family: 'Roboto';
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 150%;
+    }
+}

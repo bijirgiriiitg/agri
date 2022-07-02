@@ -1,0 +1,25 @@
+.line{
+    margin-top:5%;
+    margin-bottom: 5%;
+    height: 15px;
+    background: #0B6E4F;
+}
+.container{
+    padding-left:2%;
+    padding-right:2%;
+}
+.heading{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    transform: translateX(1%);
+    margin-bottom: 0;
+}
+.points{
+    width: 80%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
