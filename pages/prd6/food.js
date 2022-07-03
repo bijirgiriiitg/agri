@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Tabs, Tab, TabPanel } from "../../components/prd6/tabs/tabss";
 //import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-//import Modals from "../../components/prd6/Modal";
+import Modals from "../../components/prd6/Modal";
 import { MdBookmarkBorder, MdLens} from "react-icons/md";
 import Chevron from "react-chevron";
 import "./styles.module.css";
@@ -64,7 +64,7 @@ export default function Appk() {
          </div>
           
         </TabPanel>
-        <App8/>
+        <Modals/>
       </TabPanelContainer>
     </div>
     </div>
