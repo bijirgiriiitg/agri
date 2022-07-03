@@ -18,13 +18,18 @@ import Policies from "./components/global/Footer Writeup/Policies.jsx";
 import BookmarksPage from "./pages/prd9/bookmarkPage";
 import TopicPage from "./pages/prd9/topicPage";
 import CoursePages from "./pages/prd2/link.jsx";
-import Activity from "./pages/prd6/Activity.js";
 import Email from "./pages/prd5/Email";
 import Cards from "./pages/prd5/Card";
 import Test from "./pages/prd3/prd3";
 import TopicPages from "./pages/prd7/Topic";
 import Lectures from "./pages/prd7/Lectures.js";
 import Notes from "./pages/prd7/Notes.js";
+
+import Apkk from "./pages/prd6/unlock";
+import Appk from "./pages/prd6/food";
+import Activity from "./pages/prd6/Activity";
+import Home1 from "./components/prd6/Topic/Topic";
+
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -34,6 +39,11 @@ export default function Apop() {
 
       <div>
         <Routes>
+          <Route  path="/food-technology" exact component={Appk}/>
+          <Route  path="/unlock" exact component={Apkk}/>
+          <Route path="/notes3" element={<Home1/>} /> 
+          <Route path="/activity" element={<Activity />} />
+     
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/choose" element={<WhyChoose />} />
           <Route path="/privacy" element={<Privacy/>} />
