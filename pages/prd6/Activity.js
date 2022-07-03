@@ -10,13 +10,13 @@ import Loader from "../Loader";
 import styled from "styled-components";
 import { useState } from "react";
 import "./Activity.css";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import SubjectSlider from "./SubjectSlider";
 //import { Link } from "react-router-dom";
 //import { baseURL } from "../Apis";
 
 const Activity = (props, course ) => {
-  const navigate = useNavigate()
+  const history = useHistory()
   const [loader] = useState(false)
 
   const setProgressForOuter=(mS,mT)=> {
@@ -81,9 +81,9 @@ const Activity = (props, course ) => {
             </svg>
             </ActivityData>
             <div className={styles.contentOfBar}>
-            <p className={styles.number}>{percentage}%</p>
-            <p className={styles.text}>PROGRESS</p>
-          </div>
+              <p className={styles.number}>{percentage}%</p>
+              <p className={styles.text}>PROGRESS</p>
+            </div>
           </ActivityChart>
           
           <div className="line1">
@@ -133,15 +133,15 @@ const Activity = (props, course ) => {
             <img src={food} alt="food" className={styles.img} />
             <p className={styles.upperHeading}>Food Technology</p>
             <div className={styles.upperIcons}>
-              <div onClick={() => navigate('/lectures/1')} className={styles.upperIcon}>
+              <div onClick={() => history('/lectures/1')} className={styles.upperIcon}>
                 <PlayCircleIcon className={styles.uicon}></PlayCircleIcon>
                 <p className={styles.upperText}>{course.totalLectures}Expert Lectures</p>
               </div>
-              <div onClick={() => navigate('/test')} className={styles.upperIcon}>
+              <div onClick={() => history('/test')} className={styles.upperIcon}>
                 <BorderColorIcon className={styles.uicon}></BorderColorIcon>
                 <p className={styles.upperText}>{course.totalTests}5 Sectional Tests</p>
               </div>
-              <div onClick={() => navigate('/notes/1')} className={styles.upperIcon}>
+              <div onClick={() => history('/notes/1')} className={styles.upperIcon}>
                 <FormatListBulletedIcon
                   className={styles.uicon}
                 ></FormatListBulletedIcon>
