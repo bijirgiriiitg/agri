@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { Tabs, Tab, TabPanel } from "../../components/prd6/tabs/tabss";
 import { Button } from "react-bootstrap";
 import { MdBookmarkBorder} from "react-icons/md";
-import styles from "./styles.module.css";
-import { useNavigate } from "react-router-dom";
+import logo from "./unlock.jpg"
+import { useHistory } from "react-router-dom";
 import Chevron from "react-chevron";
-import Pay from "./payment";
+import Sarthak from "../../components/prd6/Topic/NavBar";
 const TabsContainer = styled.div`
   display: flex;
   padding: 2px;
@@ -17,25 +17,24 @@ const TabPanelContainer = styled.div`
   margin-top: 4%;
 `;
 
-const Apkk =()=> {
-  const navigate = useNavigate()
+export default function Apkk() {
+  const history = useHistory()
   const [activeTab, setActiveTab] = useState(2);
+
   const handleChange = (e, value) => {
     setActiveTab(value);
   };
-  
-  const handleClick = (e) => {
-    console.log(e);
-  }
 
   return (
-    <div className={styles.Appyy}>
+    <>
+    <Sarthak className="nav1"/>
+    <div className="Appyy">
       <TabsContainer>
         <Tabs selectedTab={activeTab} onChange={handleChange}>
           <Tab label="Dashboard" value={0}></Tab>
-          <Chevron className={styles.chevrony} />
+          <Chevron className="chevrony" />
           <Tab label="Food Technology" value={1}></Tab>
-          <Chevron className={styles.chevrony} />
+          <Chevron className="chevrony" />
           <Tab label="Agriculture machinery" value={2}></Tab>
         </Tabs>
       </TabsContainer>
@@ -45,19 +44,18 @@ const Apkk =()=> {
         <TabPanel value={activeTab} selectedIndex={1}>
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={2}>
-          <h1 className={styles.tab31}>Food Technology : Agriculture machinery</h1>
-          <div className={styles.bt01}>
-            <Button onClick={() => navigate('/bookmarks')} className={styles.bt0}><MdBookmarkBorder className={styles.oye100} />Bookmark</Button>
+          <h1 className="tab31">Food Technology : Agriculture machinery</h1>
+          <div className="bt01">
+            <Button onClick={() => history('/bookmarks')} className="bt0"><MdBookmarkBorder className="oye100" />Bookmark</Button>
           </div>
-          <img className={styles.org1} src="images/unlock.jpg" alt="/"/>
-          <div className={styles.bt140}>
-             <Pay/>
+          <img className="org1" src={logo} alt="/"/>
+          <div className="bt140">
+            <Button className="bt130">Unlock Now</Button>          
           </div>
-          <p className={styles.paisa}>for only <span className={styles.shi}>₹ 7000</span></p>
+          <p className="paisa">for only <span className="shi">₹ 5475475</span></p>
         </TabPanel>
       </TabPanelContainer>
     </div>
-   
+    </>
   );
 }
-export default Apkk;
