@@ -24,26 +24,7 @@ const Activity = (props, course ) => {
     let value = `${(percent<0?0:percent) * 350}`;
     return value;
   }
-  /*
-  const handelGoal =(e)=>{
-    if(e.target.value==="0"){
-      props.setdailyGoal(props.minutesTotal)
-    }
-    else{
-      setloader(true)
-      fetch(`https://agrivision-api.herokuapp.com/user/setGoal`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-        body: JSON.stringify({readingGoal: e.target.value,watchingGoal: 0})
-      })
-      .then((res) => res.json())
-      
-    }
-  }
-  */
+ 
   const percentage = 0;
   return (
     <>
